@@ -1,18 +1,85 @@
-html {
-  height: 100%;
-  width: 100%;
+body {
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+  font-family: comfortaa;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 5rem;
+  margin-bottom: -10px;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-size: 3.5rem;
+}
+
+/* CSS Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  padding: 170px 20px;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+.symbol1{
+  width: 20px;
+  height: 20px;
+}
+
+.symbol2{
+  width: 20px;
+  height: 20px;
+}
+
+.symbol3{
+  width: 20px;
+  height: 20px;
+}
+
+.symbol4{
+  width: 20px;
+  height: 20px;
+}
+
+.symbol5{
+  width: 20px;
+  height: 20px;
+}
+
+.symbol6{
+  width: 20px;
+  height: 20px;
 }
 
 .container {
   width: 100%;
-  height: 100vh;
-  position: relative;
   transition: all 0.3s;
+  position: relative;
+  z-index: 1;
 }
 
-
-
-.menu-open {
+.menu-open{
   transform: translate(-230px, 0);
 }
 
@@ -31,15 +98,15 @@ ul {
   padding: 0px;
 }
 
+/* NAV BAR CODE COPIED FROM TASK 6*/
 
-#menu li a:hover,
-#menu li a:focus {
+#menu li a:hover, #menu li a:focus {
   border-color: transparent;
   background: deepskyblue;
   color: white
 }
 
-.toggle {
+.toggle{
   display: block;
   position: absolute;
   left: -65px;
@@ -62,54 +129,52 @@ ul {
   transform: rotate(45deg) translate(8px, 11px);
 }
 
-#menu.open .toggle .bar2 {
+#menu.open .toggle .bar2{
   opacity: 0;
 }
 
-#menu.open .toggle .bar3 {
+#menu.open .toggle .bar3{
   transform: rotate(-45deg) translate(5px, -10px);
 }
 
-@media (min-width: 750px) {
+@media (max-width: 750px) {
 
-  /*'burger' not displayed*/
-  .toggle .bar1,
-  .toggle .bar2,
-  .toggle .bar3 {
-    display: none;
-  }
+  /*'burger' not displayed*/ 
+.toggle .bar1,
+.toggle .bar2,
+.toggle .bar3 {
+  display: none;
+}
 
-  .toggle {
-    display: none;
-    background-color: white;
-    top: 0;
-  }
+.toggle{
+  display: none;
+  background: none; 
+}
 
-  .container.menu-open {
-    transform: none;
-  }
-
-  /*Menu in inline block (across top of screen)*/
+.container.menu-open{
+  transform: none;
+}
+/*Menu in inline block (across top of screen)*/
   #menu {
     margin: 0;
-    padding: 15px 0;
+    padding: 15px 0; 
     width: 100%;
-    display: inline-block;
-    position: static;
+    display: absolute; 
+    justify-content: center; 
+    align-items: center; 
+    position: static; 
     right: 0;
   }
-
-  /*Items on menu are also an inline-block (rather
+/*Items on menu are also an inline-block (rather
 than under each other)*/
-  #menu li {
-    display: inline-block;
-  }
-
-  /*Different styling for when mouse cursor hovered
+#menu li{
+display: inline-block;
+}
+/*Different styling for when mouse cursor hovered
 over menu items/*/
-  #menu li a:hover {
-    border: 2px solid #fff;
-    background: transparent;
-    color: white;
-  }
+#menu li a:hover {
+border: 2px solid #fff;
+background: transparent;
+color: white;
+}
 }
