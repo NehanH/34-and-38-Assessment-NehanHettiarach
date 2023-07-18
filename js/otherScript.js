@@ -4,7 +4,3 @@ $(document).ready(function() {
     $('.container').toggleClass('menu-open');
   })
 })
-
-window.onload = function() {
-document.querySelector('.welcome').classList.add('welcome-animation');
-};
