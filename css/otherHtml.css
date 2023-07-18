@@ -55,13 +55,13 @@ a {
 }
 
 
-.title, .subtitle, .grid-item, .toggle {
+.title, .subtitle, .grid-item, .toggle, .white-bar, .white-box, .white-box iframe {
   animation: fadeIn 2s ease-in-out 4s;
   opacity: 0;
   visibility: hidden;
 }
 
-.title, .subtitle, .grid-item, .toggle {
+.title, .subtitle, .grid-item, .toggle, .white-bar, .white-box, .white-box iframe {
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
@@ -71,13 +71,17 @@ a {
   100% {opacity: 1; visibility: visible;}
 }
 
-.title, .subtitle, .grid-item, .toggle {
+.title, .subtitle, .grid-item, .toggle, .white-bar, .white-box, .white-box iframe {
   animation-name: fadeInElements;
 }
 
 .white-bar {
   position: absolute;
-  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .container {
@@ -95,6 +99,58 @@ ul {
   list-style: none;
 }
 
+.white-box {
+  position: absolute;
+  top: 230%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 65%;
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.video-container iframe {
+  width: 30%;
+  height: auto;
+  border: 10px solid rgba(255, 255, 255, 0.1);
+}
+
+details {
+  color: white;
+  font-size: 2rem;
+  padding-top: 20px;
+}
+
+
+summary {
+  color: white;
+  font-size: 2rem;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+p {
+  color: white;
+  font-size: 1rem; 
+  padding-left: 20px;
+}
+
+.box-title {
+  text-align: center;
+  margin-top: 0;
+  font-size: 5rem;
+  color: white;
+}
+
+/* NAV BAR CODE COPIED FROM TASK 6*/
 #menu {
   background: transparent;
   text-align: center;
@@ -105,8 +161,6 @@ ul {
   right: -230px;
   padding: 0px;
 }
-
-/* NAV BAR CODE COPIED FROM TASK 6*/
 
 #menu li a {
   color: white;
@@ -195,3 +249,4 @@ background: transparent;
 color: white;
 }
 }
+
