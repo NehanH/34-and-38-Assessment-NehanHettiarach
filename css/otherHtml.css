@@ -54,20 +54,6 @@ a {
   100% {opacity: 0;}
 }
 
-.welcome {
-  margin: 0;
-  font-size: 6rem;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.welcome-animation {
-  animation: fadeIn 2s ease-in-out, fadeOut 2s ease-in-out 2s;
-  animation-fill-mode: forwards;
-}
 
 .title, .subtitle, .grid-item, .toggle {
   animation: fadeIn 2s ease-in-out 4s;
@@ -76,7 +62,7 @@ a {
 }
 
 .title, .subtitle, .grid-item, .toggle {
-  animation-delay: 5s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -89,73 +75,9 @@ a {
   animation-name: fadeInElements;
 }
 
-/* CSS Grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  row-gap: 100px;
-  justify-items: center;
-  padding: 130px 20px;
-}
-
-.grid-item {
-  display: flex;
-  align-items: center;
-  font-size: 2.5rem;
-  color: white;
-}
-
-.grid-item:hover {
-  transform: scale(1.2)
-}
-
-.symbol1{
-  width: 50px;
-  height: 50px;
-  background-image: url('../image/material.png');
-  background-size: 100%;
-  margin-right: 10px;
-}
-
-.symbol2{
-  width: 50px;
-  height: 50px;
-  background-image: url('../image/sculpt.png');
-  background-size: 100%;
-  margin-right: 10px;
-}
-
-.symbol3{
-  width: 50px;
-  height: 50px;
-  background-image: url('../image/lamp.png');
-  background-size: 100%;
-  margin-right: 10px;
-}
-
-.symbol4{
-  width: 50px;
-  height: 50px;
-  background-image: url('../image/predictive-models.png');
-  background-size: 100%;
-  margin-right: 10px;
-}
-
-.symbol5{
-  width: 50px;
-  height: 50px;
-  background-image: url('../image/route.png');
-  background-size: 100%;
-  margin-right: 10px;
-}
-
-.symbol6{
-  width: 50px;
-  height: 50px;
-  background-image: url('../image/animation.png');
-  background-size: 100%;
-  margin-right: 10px;
+.white-bar {
+  position: absolute;
+  
 }
 
 .container {
