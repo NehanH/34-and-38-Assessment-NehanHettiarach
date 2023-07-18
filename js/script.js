@@ -5,4 +5,6 @@ $(document).ready(function() {
   })
 })
 
-
+window.onload = function() {
+document.querySelector('.welcome').classList.add('welcome-animation');
+};

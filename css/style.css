@@ -50,8 +50,6 @@ body {
 }
 
 .welcome {
-  animation: fadeIn 2s ease-in-out, fadeOut 2s ease-in-out 2s;
-  animation-fill-mode: forwards;
   margin: 0;
   font-size: 6rem;
   color: white;
@@ -61,6 +59,11 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.welcome-animation {
+  animation: fadeIn 2s ease-in-out, fadeOut 2s ease-in-out 2s;
+  animation-fill-mode: forwards;
+}
+
 .title, .subtitle, .grid-item, .toggle {
   animation: fadeIn 2s ease-in-out 4s;
   opacity: 0;
@@ -68,7 +71,7 @@ body {
 }
 
 .title, .subtitle, .grid-item, .toggle {
-  animation-delay: 4s;
+  animation-delay: 5s;
   animation-fill-mode: forwards;
 }
 
