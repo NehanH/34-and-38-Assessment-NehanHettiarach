@@ -1,19 +1,29 @@
 body {
-  background-color: grey;
+  background-image: url('../image/Background.png');
+  background-size: cover;
   margin: 0;
   padding: 0;
-  font-family: comfortaa;
+  font-family: LOUIS-GEORGE-CAFE;
+  position: relative;
+}
+
+@font-face {
+  font-family: LOUIS-GEORGE-CAFE;
+  src: url('../font/Louis\ George\ Cafe.woff') format('woff'),
+       url('../font/Louis\ George\ Cafe.woff2') format('woff2');
 }
 
 .header {
   position: relative;
   text-align: center;
   padding: 20px;
+  color: white;
 }
 
 .title {
   font-size: 5rem;
   margin-bottom: -10px;
+  color: white;
 }
 
 .menu {
@@ -21,10 +31,54 @@ body {
   top: 20px;
   right: 20px;
   font-size: 2rem;
+  color: white;
 }
 
 .subtitle {
   font-size: 3.5rem;
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.welcome {
+  animation: fadeIn 2s ease-in-out, fadeOut 2s ease-in-out 2s;
+  animation-fill-mode: forwards;
+  margin: 0;
+  font-size: 6rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title, .subtitle, .grid-item, .toggle {
+  animation: fadeIn 2s ease-in-out 4s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.title, .subtitle, .grid-item, .toggle {
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInElements {
+  0% {opacity: 0; visibility: hidden;}
+  100% {opacity: 1; visibility: visible;}
+}
+
+.title, .subtitle, .grid-item, .toggle {
+  animation-name: fadeInElements;
 }
 
 /* CSS Grid */
@@ -33,43 +87,66 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   justify-items: center;
-  padding: 170px 20px;
+  padding: 130px 20px;
 }
 
 .grid-item {
   display: flex;
   align-items: center;
   font-size: 2.5rem;
+  color: white;
+}
+
+.grid-item:hover {
+  transform: scale(1.2)
 }
 
 .symbol1{
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../image/material.png');
+  background-size: 100%;
+  margin-right: 10px;
 }
 
 .symbol2{
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../image/sculpt.png');
+  background-size: 100%;
+  margin-right: 10px;
 }
 
 .symbol3{
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../image/lamp.png');
+  background-size: 100%;
+  margin-right: 10px;
 }
 
 .symbol4{
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../image/predictive-models.png');
+  background-size: 100%;
+  margin-right: 10px;
 }
 
 .symbol5{
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../image/route.png');
+  background-size: 100%;
+  margin-right: 10px;
 }
 
 .symbol6{
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../image/animation.png');
+  background-size: 100%;
+  margin-right: 10px;
 }
 
 .container {
@@ -88,7 +165,7 @@ ul {
 }
 
 #menu {
-  background: lightblue;
+  background: transparent;
   text-align: center;
   width: 230px;
   height: 100%;
@@ -100,9 +177,13 @@ ul {
 
 /* NAV BAR CODE COPIED FROM TASK 6*/
 
+#menu li a {
+  color: white;
+}
+
 #menu li a:hover, #menu li a:focus {
   border-color: transparent;
-  background: deepskyblue;
+  background: transparent;
   color: white
 }
 
@@ -111,7 +192,7 @@ ul {
   position: absolute;
   left: -65px;
   cursor: pointer;
-  background: deepskyblue;
+  background: transparent;
   padding: 15px 15px 10px
 }
 
@@ -139,6 +220,11 @@ ul {
 
 @media (max-width: 750px) {
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+  
   /*'burger' not displayed*/ 
 .toggle .bar1,
 .toggle .bar2,
