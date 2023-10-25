@@ -1,0 +1,50 @@
+body {
+  background-image: url('../image/Background.png');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: LOUIS-GEORGE-CAFE;
+  position: relative;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: LOUIS-GEORGE-CAFE;
+  src: url('../font/Louis\ George\ Cafe.woff') format('woff'),
+       url('../font/Louis\ George\ Cafe.woff2') format('woff2');
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.title {
+  font-size: 5rem;
+  margin-bottom: -10px;
+  color: white;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: white;
+}
+
+.welcome {
+  visibility: hidden;
+}
+
+.subtitle {
+  font-size: 3.5rem;
+  color: white;
+}
+

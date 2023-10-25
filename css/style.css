@@ -1,3 +1,5 @@
+/*HTML CODE*/
+
 body {
   background-image: url('../image/Background.png');
   background-size: cover;
@@ -12,6 +14,7 @@ a {
   text-decoration: none;
 }
 
+
 @font-face {
   font-family: LOUIS-GEORGE-CAFE;
   src: url('../font/Louis\ George\ Cafe.woff') format('woff'),
@@ -24,6 +27,8 @@ a {
   padding: 20px;
   color: white;
 }
+
+/*LANDING PAGE*/
 
 .title {
   font-size: 5rem;
@@ -44,6 +49,8 @@ a {
   color: white;
 }
 
+/*ANIMATIONS*/
+
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -54,6 +61,16 @@ a {
   100% {opacity: 0;}
 }
 
+.quick-fadeIn {
+  animation: fadeIn 1s ease-in-out 1s;
+}
+
+.immediate-visibility {
+  animation: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
 .welcome {
   margin: 0;
   font-size: 6rem;
@@ -62,6 +79,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
 .welcome-animation {
@@ -366,7 +384,7 @@ summary::-webkit-details-marker {
     display: none;
 }
 
-summary:hover,
+.navbar-container summary:hover,
 summary:focus {
     background-color: mix(#000, #185adb, 20%);
 }
@@ -440,5 +458,45 @@ summary i {
   li + li {
     margin-top: 0;
     margin-left: .75rem;
+  }
+}
+
+@media (max-width: 640px) {
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 10px;
+  left: 67%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+  @media (max-width: 480px) {
+
+  .navbar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    top: 10px;
+    left: 75%;
+    transform: translateX(-50%);
+    z-index: 9999;
+  }
+
+@media (max-width: 320px) {
+
+  .navbar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    top: 10px;
+    left: 85%;
+    transform: translateX(-50%);
+    z-index: 9999;
   }
 }
