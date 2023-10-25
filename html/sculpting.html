@@ -9,42 +9,54 @@
   <script src="../js/otherScript.js"></script>
 </head>
 <body>
-<!--NAV BAR TAKEN FROM MINI SKILL TASK 6-->
-      <div class="container">
-    <nav>
-      <ul id="menu">
-        <li class="toggle">
-          <div class="bar1"></div>
-          <div class="bar2"></div> 
-          <div class="bar3"></div>
-        </li>
-        <li id="menu-options">
-          <li><a href="">HOME</a></li>
-          <li><a href="">RENT</a></li>
-          <li><a href="">BUY</a></li>
-          <li><a href="">EXPERIENCE</a></li>
-          <li><a href="model.html">MODEL</a></li>
-        </li>
-      </ul>
-    </nav>
+<!--NAVBAR HTML CREATED BY Håvard Brynjulfsen-->
+<!--NAVBAR EDITED BY NEHAN HETTIARACHCHI TERM 3 2023-->
+<div role="nav" class="navbar-wrapper">
+<div class="navbar-container">
+<ul>
+	<li>
+		<a href="../index.html">
+			<i class="ai-home"></i>
+			<span>Home</span>
+		</a>
+	</li>
+	<li>
+		<a href="#">
+			<i class="ai-image"></i>
+			<span>About</span>
+		</a>
+	</li>	
+	<li>
+		<a href="#">
+			<i class="ai-file"></i>
+			<span>Credit</span>
+		</a>
+	</li>
+	<li>
+</ul>
+</div>
   </div>
   <div class="white-bar"></div>
   <div class="header">
   </div>
 
-  <div class="white-box">
-    <h1 class="box-title">Sculpting</h1>
+  <div role="main" class="white-box">
+        <div class="navigation-container">
+      <a href="texturing.html" class="navigation-link">Go To Previous Skill Page</a>
+    <h1 class="box-title navigation-title">Sculpting</h1>
+      <a href="lighting.html" class="navigation-link">Go To Next Skill Page</a>
+    </div>
     <div class="video-container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9N87-yRR5aE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
  <iframe width="560" height="315" src="https://www.youtube.com/embed/HJSGoKbNBnQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <details>
-      <summary>What is Blender Sculpting?</summary>
+      <summary class="clickable-summary">What is Blender Sculpting?</summary>
       <p>Sculpting in Blender is a technique that allows artists to create and shape complex 3D models in a very intuitive and tactile way. It's particularly useful for creating organic shapes and detailed characters. Blender's sculpting tools include brushes that can pull, push, smooth, grab, pinch or manipulate the surface of a 3D model.</p>
     </details>
     <details>
-      <summary>Task 1</summary>
+      <summary class="clickable-summary">Task 1</summary>
       <p>Basic Sculpting: Start by experimenting with the basic sculpting tools on a simple object, like a sphere. Try using different brushes and see how they affect the shape of the object.</p>
       <p>1.Open Blender and create a new project.</p>
       <p>2.Add a simple object to your scene, such as a sphere.</p>
@@ -54,7 +66,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/ijdhJsN2Iiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </details>
     <details>
-      <summary>Task 2</summary>
+      <summary class="clickable-summary">Task 2</summary>
       <p>Dynamic Topology: Learn how to use dynamic topology, a feature in Blender that dynamically adjusts the detail of your mesh as you sculpt. This is particularly useful for adding detail to specific areas of your model.</p>
       <p>1.Switch to Sculpt Mode.</p>
       <p>2.In the top menu, go to the 'Sculpt' menu and select 'Dynamic Topology'.</p>
@@ -63,7 +75,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/7vO0Id1PCmQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </details>
     <details>
-      <summary>Task 3</summary>
+      <summary class="clickable-summary">Task 3</summary>
       <p>Sculpt a Basic Shape: Try to sculpt a basic shape, like a human face or an animal. Start with a simple shape and gradually add more detail.</p>
       <p>1.Switch to Sculpt Mode</p>
       <p>2.Use the basic sculpting brushes to shape your object into a basic form, such as a human face or an animal.</p>
@@ -71,7 +83,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/G_OrMDOK-Og" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </details>
     <details>
-      <summary>Task 4</summary>
+      <summary class="clickable-summary">Task 4</summary>
       <p>Detail Sculpting: Once you're comfortable with the basics, try adding more detail to your sculptures. This could include things like wrinkles, scars, or textures.</p>
       <p>1.Once you're comfortable with basic sculpting, you can start adding more detail to your sculptures.</p>
       <p>2.Use the Crease brush to add sharp creases or wrinkles.</p>
@@ -80,7 +92,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/NjGZ0uQREV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </details>
     <details>
-      <summary>Task 5</summary>
+      <summary class="clickable-summary">Task 5</summary>
       <p>Sculpting with a Reference: Find a reference image of something you'd like to sculpt, and try to replicate it in Blender. This could be a character from a movie, a piece of concept art, or a real-life object or creature.</p>
       <p>1.In Blender, go to the 'Background Images' section in the right-hand panel and add your reference image.</p>
       <p>2.Start a new sculpting project and use your reference image as a guide.</p>

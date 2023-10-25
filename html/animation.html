@@ -9,41 +9,53 @@
   <script src="../js/otherScript.js"></script>
 </head>
 <body>
-<!--NAV BAR TAKEN FROM MINI SKILL TASK 6-->
-      <div class="container">
-    <nav>
-      <ul id="menu">
-        <li class="toggle">
-          <div class="bar1"></div>
-          <div class="bar2"></div> 
-          <div class="bar3"></div>
-        </li>
-        <li id="menu-options">
-          <li><a href="">HOME</a></li>
-          <li><a href="">RENT</a></li>
-          <li><a href="">BUY</a></li>
-          <li><a href="">EXPERIENCE</a></li>
-          <li><a href="model.html">MODEL</a></li>
-        </li>
-      </ul>
-    </nav>
+<!--NAVBAR HTML CREATED BY Håvard Brynjulfsen-->
+<!--NAVBAR EDITED BY NEHAN HETTIARACHCHI TERM 3 2023-->
+<div role="nav" class="navbar-wrapper">
+<div class="navbar-container">
+<ul>
+	<li>
+		<a href="../index.html">
+			<i class="ai-home"></i>
+			<span>Home</span>
+		</a>
+	</li>
+	<li>
+		<a href="#">
+			<i class="ai-image"></i>
+			<span>About</span>
+		</a>
+	</li>	
+	<li>
+		<a href="#">
+			<i class="ai-file"></i>
+			<span>Credit</span>
+		</a>
+	</li>
+	<li>
+</ul>
+</div>
   </div>
   <div class="white-bar"></div>
   <div class="header">
   </div>
 
-  <div class="white-box">
-    <h1 class="box-title">Animation</h1>
+  <div role="main" class="white-box">
+        <div class="navigation-container">
+      <a href="navigation.html" class="navigation-link">Go To Previous Skill Page</a>
+    <h1 class="box-title navigation-title">Animation</h1>
+      <a href="../index.html" class="nav-home navigation-link">Go To Home Page</a>
+    </div>
     <div class="video-container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CBJp82tlR3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/_C2ClFO3FAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 <details>
-  <summary>What is Blender Animation?</summary>
+  <summary class="clickable-summary">What is Blender Animation?</summary>
   <p>Animation in Blender involves creating motion with 3D objects, characters, or cameras within a scene. It's a powerful way to bring virtual creations to life, whether for films, games, or simulations. Blender's animation tools include keyframing, rigging, motion tracking, and more, allowing for complex and expressive animations.</p>
 </details>
   <details>
-    <summary>Task 1</summary>
+    <summary class="clickable-summary">Task 1</summary>
     <p>Basic Keyframe Animation: Create a simple animation by manually setting keyframes to control an object's position, rotation, and scale over time.</p>
     <p>1. Open Blender and add an object to your scene.</p>
     <p>2. Move to the frame where you want the animation to start and set a keyframe</p>
@@ -52,7 +64,7 @@
   <iframe width="560" height="315" src="https://www.youtube.com/embed/8gi9lUYMRcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </details>
     <details>
-      <summary>Task 2</summary>
+      <summary class="clickable-summary">Task 2</summary>
       <p>Character Rigging: Rig a character model with a skeleton to prepare it for animation.</p>
       <p>1. Import or create a character model in Blender.</p>
       <p>2. Add an armature and place the bones to match the character's structure.</p>
@@ -61,7 +73,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/vzJ7454X46g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </details>
         <details>
-      <summary>Task 3</summary>
+      <summary class="clickable-summary">Task 3</summary>
       <p>Walk Cycle: Animate a character to walk in a loop, a fundamental skill in character animation.</p>
       <p>1. Start with a rigged character.</p>
       <p>2. Animate one step, setting keyframes for the character's limbs and body.</p>
@@ -70,7 +82,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/e_COc0ZVHr0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </details>
         <details>
-      <summary>Task 4</summary>
+      <summary class="clickable-summary">Task 4</summary>
       <p>Camera Animation: Animate the camera to create dynamic shots within your scene.</p>
       <p>1. Add a camera to your scene.</p>
       <p>2. Set keyframes for the camera's position, rotation, and other properties at different frames.</p>
@@ -78,7 +90,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/r9i6g-pToVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </details>
         <details>
-      <summary>Task 5 (Advanced)</summary>
+      <summary class="clickable-summary">Task 5 (Advanced)</summary>
       <p>Lip Syncing: Animate a character's mouth to match spoken dialogue.</p>
       <p>1. Import the audio file with the dialogue into Blender.</p>
       <p>2. Listen to the audio and identify the key mouth shapes (phonemes) needed.</p>

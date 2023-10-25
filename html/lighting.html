@@ -4,46 +4,58 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Lighting</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="../css/otherHtml.css" rel="stylesheet" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="../js/otherScript.js"></script>
 </head>
 <body>
-<!--NAV BAR TAKEN FROM MINI SKILL TASK 6-->
-      <div class="container">
-    <nav>
-      <ul id="menu">
-        <li class="toggle">
-          <div class="bar1"></div>
-          <div class="bar2"></div> 
-          <div class="bar3"></div>
-        </li>
-        <li id="menu-options">
-          <li><a href="">HOME</a></li>
-          <li><a href="">RENT</a></li>
-          <li><a href="">BUY</a></li>
-          <li><a href="">EXPERIENCE</a></li>
-          <li><a href="model.html">MODEL</a></li>
-        </li>
-      </ul>
-    </nav>
+<!--NAVBAR HTML CREATED BY Håvard Brynjulfsen-->
+<!--NAVBAR EDITED BY NEHAN HETTIARACHCHI TERM 3 2023-->
+<div role="nav" class="navbar-wrapper">
+<div class="navbar-container">
+<ul>
+	<li>
+		<a href="../index.html">
+			<i class="ai-home"></i>
+			<span>Home</span>
+		</a>
+	</li>
+	<li>
+		<a href="#">
+			<i class="ai-image"></i>
+			<span>About</span>
+		</a>
+	</li>	
+	<li>
+		<a href="#">
+			<i class="ai-file"></i>
+			<span>Credit</span>
+		</a>
+	</li>
+	<li>
+</ul>
+</div>
   </div>
   <div class="white-bar"></div>
   <div class="header">
   </div>
 
-  <div class="white-box">
-    <h1 class="box-title">Lighting</h1>
+  <div role="main" class="white-box">
+        <div class="navigation-container">
+      <a href="sculpting.html" class="navigation-link">Go To Previous Skill Page</a>
+    <h1 class="box-title navigation-title">Lighting</h1>
+      <a href="modelling.html" class="navigation-link">Go To Next Skill Page</a>
+    </div>
     <div class="video-container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ElMM3u2MO5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/6rNKGVcJy-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 <details>
-  <summary>What is Blender Lighting?</summary>
+  <summary class="clickable-summary">What is Blender Lighting?</summary>
    <p>Lighting in Blender is the process of adding and manipulating light sources within a scene to create a desired mood, atmosphere, or realism. Proper lighting can enhance the visual appeal of a 3D model, highlight specific features, and create depth and contrast. Blender offers various types of lights, including point lights, spotlights, area lights, and sun lights, each with its unique properties and applications.</p>
 </details>
 <details>
-  <summary>Task 1</summary>
+  <summary class="clickable-summary">Task 1</summary>
   <p>Understanding Different Light Types: Experiment with different types of lights in Blender to understand their characteristics and how they affect a scene.</p>
   <p>1. Open Blender and create a new project</p>
   <p>2. Add a simple object to your scene, like a sphere.</p>
@@ -52,7 +64,7 @@
   <iframe width="560" height="315" src="https://www.youtube.com/embed/rbyYvmykjQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 <details>
-  <summary>Task 2</summary>
+  <summary class="clickable-summary">Task 2</summary>
   <p>Three-Point Lighting: Set up a basic three-point lighting system to understand how to create depth and dimension in your scene.</p>
   <p>1. Start with a primary object in your scene.</p>
   <p>2. Add a key light, which is the main source of light, typically placed to one side of the object casting shadows.</p>
@@ -61,7 +73,7 @@
   <iframe width="560" height="315" src="https://www.youtube.com/embed/RDbrOpnIY7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 <details>
-  <summary>Task 3</summary>
+  <summary class="clickable-summary">Task 3</summary>
   <p>Color in Lighting: Experiment with different colors in your light sources to set the mood and atmosphere of a scene.</p>
   <p>1. Add a light source to your scene.</p>
   <p>2. In the light's properties, adjust the color to something other than white.</p>
@@ -69,7 +81,7 @@
   <iframe width="560" height="315" src="https://www.youtube.com/embed/dA2dgf-1OAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 <details>
-  <summary>Task 4</summary>
+  <summary class="clickable-summary">Task 4</summary>
   <p>Shadow Play: Understand how to manipulate shadows using light sources.</p>
   <p>1. Place an object in your scene with a light source casting a shadow.</p>
   <p>2. Adjust the position, intensity, and size of the light to see how it affects the shadow's length and softness.</p>
@@ -77,7 +89,7 @@
   <iframe width="560" height="315" src="https://www.youtube.com/embed/RRilLLyyn1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 <details>
-  <summary>Task 5</summary>
+  <summary class="clickable-summary">Task 5</summary>
   <p>Environment Lighting: Use HDRI (High Dynamic Range Imaging) to light your scene, providing realistic lighting based on real-world environments.</p>
   <p>1. Download an HDRI image suitable for your scene.</p>
   <p>2. In Blender, go to the World settings and set the environment texture to your downloaded HDRI.</p>

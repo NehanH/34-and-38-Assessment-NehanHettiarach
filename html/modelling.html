@@ -5,50 +5,62 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Modelling</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="../css/otherHtml.css" rel="stylesheet" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="../js/otherScript.js"></script>
 </head>
 
 <body>
-  <!--NAV BAR TAKEN FROM MINI SKILL TASK 6--->
-  <div class="container">
-    <nav>
-      <ul id="menu">
-        <li class="toggle">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </li>
-        <li id="menu-options">
-        <li><a href="">HOME</a></li>
-        <li><a href="">RENT</a></li>
-        <li><a href="">BUY</a></li>
-        <li><a href="">EXPERIENCE</a></li>
-        <li><a href="model.html">MODEL</a></li>
-        </li>
-      </ul>
-    </nav>
+<!--NAVBAR HTML CREATED BY Håvard Brynjulfsen-->
+<!--NAVBAR EDITED BY NEHAN HETTIARACHCHI TERM 3 2023-->
+<div role="nav" class="navbar-wrapper">
+<div class="navbar-container">
+<ul>
+	<li>
+		<a href="../index.html">
+			<i class="ai-home"></i>
+			<span>Home</span>
+		</a>
+	</li>
+	<li>
+		<a href="#">
+			<i class="ai-image"></i>
+			<span>About</span>
+		</a>
+	</li>	
+	<li>
+		<a href="#">
+			<i class="ai-file"></i>
+			<span>Credit</span>
+		</a>
+	</li>
+	<li>
+</ul>
+</div>
   </div>
   <div class="white-bar"></div>
   <div class="header">
   </div>
 
-  <div class="white-box">
-    <h1 class="box-title">Modelling</h1>
+  <div role="main" class="white-box">
+        <div class="navigation-container">
+      <a href="lighting.html" class="navigation-link">Go To Previous Skill Page</a>
+    <h1 class="box-title navigation-title">Modelling</h1>
+      <a href="navigation.html" class="navigation-link">Go To Next Skill Page</a>
+    </div>
     <div class="video-container">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/9xAumJRKV6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Hf2esGA7vCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <details>
-      <summary>What is Blender Modelling?</summary>
+      <summary class="clickable-summary">What is Blender Modelling?</summary>
       <p>Modelling in Blender is the process of creating 3D objects and shapes by manipulating vertices, edges, and
         faces in a 3D space. It's a fundamental skill in 3D design and is used in various fields such as animation, game
         design, and architecture.</p>
     </details>
     <details>
-      <summary>Task 1</summary>
+      <summary class="clickable-summary">Task 1</summary>
       <p>Basic Modelling: Create a simple 3D object like a cube or sphere and manipulate its shape.</p>
       <p>1. Open Blender and create a new project.</p>
       <p>2. Add a basic shape like a cube or sphere.</p>
@@ -56,7 +68,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Z8sg0nHNTTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </details>
     <details>
-      <summary>Task 2</summary>
+      <summary class="clickable-summary">Task 2</summary>
       <p>Modelling With Modifiers: Use modifiers to automatically change an object's geometry.</p>
       <p>1. Select an object in your scene.</p>
       <p>2. Go to the Modifiers tab and add a modifier like Subdivision Surface.</p>
@@ -64,7 +76,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/G4wLAHuqarc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </details>
     <details>
-      <summary>Task 3</summary>
+      <summary class="clickable-summary">Task 3</summary>
       <p>Extruding: Learn how to extrude faces to create complex shapes</p>
       <p>1. Select a face on your object.</p>
       <p>2. Press E to extrude the face and move it to create a new shape.</p>
@@ -72,7 +84,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/2qD_tcPMhOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </details>
     <details>
-      <summary>Task 4</summary>
+      <summary class="clickable-summary">Task 4</summary>
       <p>Sculpting In Modelling: Use sculpting techniques in the modelling process.</p>
       <p>1. Switch to Sculpt Mode.</p>
       <p>2. Use various brushes to shape your object.</p>
@@ -80,7 +92,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/nIoXOplUvAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </details>
     <details>
-      <summary>Task 5</summary>
+      <summary class="clickable-summary">Task 5</summary>
       <p>Uv Mapping: Learn how to unwrap a 3D model and apply a texture using UV mapping.</p>
       <p>1. Select your object and switch to Edit Mode.</p>
       <p>2. Select all faces and press U to unwrap the object.</p>
